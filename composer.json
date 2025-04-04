@@ -63,7 +63,7 @@
                 },
                 "autoload": {
                     "psr-4": {
-                        "Zend\\Stdlib\\": "src/"
+                        "Zend\\ServiceManager\\": "src/"
                     }
                 }
             }
