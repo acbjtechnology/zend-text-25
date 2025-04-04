@@ -14,8 +14,8 @@
     },
     "require": {
         "php": ">=7.3",
-        "zendframework/zend-stdlib": "~2.5",
-        "zendframework/zend-servicemanager": "~2.5"
+        "acbjtechnology/zend-stdlib-25": "@dev",
+        "acbjtechnology/zend-servicemanager-25": "@dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
@@ -32,5 +32,41 @@
     },
     "require-dev": {
         "zendframework/zend-config": "~2.5"
-    }
+    },
+    "repositories" : [
+        {
+            "type":"package",
+            "package": {
+                "name": "acbjtechnology/zend-stdlib-25",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/acbjtechnology/zend-stdlib-25.git",
+                    "type": "git",
+                    "reference":"main"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Zend\\Stdlib\\": "src/"
+                    }
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "acbjtechnology/zend-servicemanager-25",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/acbjtechnology/zend-servicemanager-25.git",
+                    "type": "git",
+                    "reference":"main"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Zend\\Stdlib\\": "src/"
+                    }
+                }
+            }
+        }
+    ]
 }
