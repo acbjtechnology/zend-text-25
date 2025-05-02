@@ -95,7 +95,7 @@ class Column
         if ($charset === null) {
             $inputCharset = Table::getInputCharset();
         } else {
-            $inputCharset = strtolower($charset);
+            $inputCharset = strtolower(($charset ?? ''));
         }
 
         $outputCharset = Table::getOutputCharset();
